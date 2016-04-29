@@ -1,0 +1,47 @@
+<div id="myprofile">
+	<div class="inner">
+		<div class="row profilepic">
+			
+			<div id="prof_pic" ng-style="{'background-image':'url('+view.user.profilePicture+')'}">
+				<div class="edit">
+					<a ui-sref="editprofilescreen" class="btn flat waves-effect waves-orange">
+						Editar perfil
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row information">
+			<div class="nome col s12">
+				<span>Andersson Quegi</span>
+			</div>
+			<div class="telefone col s12">
+				<span>+55 (19) 912345-6789</span>
+			</div>
+			<div class="email col s12">
+				<span>sauro@sauro.me</span>
+			</div>
+			<div class="cidade col s12">
+				<span>Campinas/sp</span>
+			</div>
+			<div class="cpf col s12">
+				<span><b>CPF:</b> 123.***.***-03</span>
+			</div>
+			<div class="rg col s12">
+				<span><b>RG:</b> 22.***.***-8</span>
+			</div>
+		</div>
+		<div class="row mys">
+			<div class="rotas col s12">
+				<a class="waves-effect waves-orange" ui-sref="myroutesscreen">Minhas Rotas</a>
+			</div>
+			<div class="rotas col s12">
+				<a class="waves-effect waves-orange" ui-sref="myvehiclesscreen">Meus Veiculos</a>
+			</div>
+			<div class="rotas col s12">
+				<a class="waves-effect waves-orange" ui-sref="myinfoscreen">Informações de recebimento</a>
+			</div>
+		</div>
+	</div>
+	<bottomlinks></bottomlinks>
+</div>	

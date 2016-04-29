@@ -1,0 +1,76 @@
+#welcome{
+	.bg{
+		.grab();
+		background-image: url('images/bgstart.jpg');
+		background-size: cover;
+		background-position: center center;
+		z-index:1;
+	}
+	.fg{
+		.grab();
+		z-index: 2;
+		color: #fff;
+		@media @desktop{
+			text-align: center;
+		}
+		.col{
+			padding: 0 1.5rem;
+		}
+		.title{
+			h1{
+				font-size: 5rem;
+				font-weight: lighter;
+				
+			}
+			span{
+				@media @portraitMobileAndTablet{
+					display: block;
+				}
+			}
+		}
+		.text{
+			font-weight: lighter;
+			font-size: 1.65em;
+		}
+		.texts{
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			overflow: auto;
+			max-height: ~"calc(100% - 144px)";
+		}
+		.buttons{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			.start, .login{
+				text-align: center;
+			}
+			.login-btn{
+				color: #fff;
+			}
+		}
+		@media @desktop{
+
+			max-width: 400px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			.text{
+				font-weight: lighter;
+				font-size: 1.2em;
+			}
+
+		}	
+		@media @landscapeMobileAndTablet{
+			overflow: auto;
+			.texts, .buttons{
+				position: relative;
+				max-height: none;
+
+			}
+		}
+	}
+}
+

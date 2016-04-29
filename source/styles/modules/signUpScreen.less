@@ -1,0 +1,125 @@
+#signup{
+	.bg{
+		.grab();
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ea5244+0,f39057+100 */
+		background: #ea5244; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ea5244 0%, #f39057 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #ea5244 0%,#f39057 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #ea5244 0%,#f39057 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5244', endColorstr='#f39057',GradientType=0 ); /* IE6-9 */
+		z-index: 1;
+	}
+	.fg{
+		.grab();
+		overflow: auto;
+		z-index: 2;
+		text-align: center;
+		color: #fff;
+		>.row{
+			max-width: 400px;
+		}
+		.head{
+			h1{
+				font-size: 5.9rem;
+				line-height: 1;
+				font-weight: 100;
+			}
+			p{
+				max-width: 200px;
+				margin: 0 auto;
+			}
+		}
+		.form{
+			margin: 0 auto;
+		}
+	}
+}
+
+#signupform{
+
+	label{
+
+		color: #ededed;
+	}
+	input:not([type]),
+	input[type=text],
+	input[type=password],
+	input[type=email],
+	input[type=url],
+	input[type=time],
+	input[type=date],
+	input[type=datetime-local],
+	input[type=tel],
+	input[type=number],
+	input[type=search],
+	textarea.materialize-textarea {
+		color: #fff;
+		border-bottom: 1px solid #ededed;
+		font-size: 1.4em;
+	}
+	input:not([type]):focus:not([readonly]),
+	input[type=text]:focus:not([readonly]),
+	input[type=password]:focus:not([readonly]),
+	input[type=email]:focus:not([readonly]),
+	input[type=url]:focus:not([readonly]),
+	input[type=time]:focus:not([readonly]),
+	input[type=date]:focus:not([readonly]),
+	input[type=datetime-local]:focus:not([readonly]),
+	input[type=tel]:focus:not([readonly]),
+	input[type=number]:focus:not([readonly]),
+	input[type=search]:focus:not([readonly]),
+	textarea.materialize-textarea:focus:not([readonly]) {
+		border-bottom: 1px solid #ededed;
+		box-shadow: 0 1px 0 0 #ededed;
+	}
+
+	input:not([type]):focus:not([readonly]) + label,
+	input[type=text]:focus:not([readonly]) + label,
+	input[type=password]:focus:not([readonly]) + label,
+	input[type=email]:focus:not([readonly]) + label,
+	input[type=url]:focus:not([readonly]) + label,
+	input[type=time]:focus:not([readonly]) + label,
+	input[type=date]:focus:not([readonly]) + label,
+	input[type=datetime-local]:focus:not([readonly]) + label,
+	input[type=tel]:focus:not([readonly]) + label,
+	input[type=number]:focus:not([readonly]) + label,
+	input[type=search]:focus:not([readonly]) + label,
+	textarea.materialize-textarea:focus:not([readonly]) + label {
+		color: #ededed;
+	}
+	.material-icons{
+		font-size: inherit;
+	}
+	input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+		background-color: rgba(250, 255, 189,0.2) !important;
+		background-image: none;
+		color: #fff !important;
+	}
+
+	[type="checkbox"] + label:before {
+
+		border: 2px solid #fafafa;
+
+	}
+
+
+	[type="checkbox"]:checked + label:before {
+		top: -4px;
+		left: -3px;
+		width: 12px;
+		height: 22px;
+		border-top: 2px solid transparent;
+		border-left: 2px solid transparent;
+		border-right: 2px solid #fff;
+		border-bottom: 2px solid #ffff;
+		-webkit-transform: rotate(40deg);
+		transform: rotate(40deg);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transform-origin: 100% 100%;
+		transform-origin: 100% 100%;
+	}
+	.continuar{
+		padding: 20px 0;
+	}
+}

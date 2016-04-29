@@ -1,0 +1,37 @@
+<div id="sidemenu">
+	
+
+	<ul id="main-menu" class="side-nav fixed">
+		<div class="profile">
+			<div class="photo" ng-style="{'background-image':'url('+mainmenu.user.profilePicture+')'}"></div>
+			<div class="name">
+				<a ui-sref="myprofilescreen"><span>Andersson Quegi</span></a>
+			</div>
+			<div class="edit">
+				<a ui-sref="editprofilescreen">
+					<i class="material-icons">mode edit</i>
+				</a>
+			</div>
+		</div>
+		<div class="menu-sec">
+			<li class="common waves-effect waves-orange">
+				<a ui-sref="startscreen">Inicio</a>
+			</li>
+			<li class="common waves-effect waves-orange">
+				<a >Minhas rotas</a>
+			</li>
+			<li class="common waves-effect waves-orange">
+				<a >Encomendas disponiveis</a>
+			</li>
+			<li class="common waves-effect waves-orange">
+				<a >Enviar encomenda</a>
+			</li>
+
+		</div>
+		<div class="menu-bottom">
+			<a ui-sref="signinscreen" class="waves-effect waves-orange btn-flat">Logout</a>
+		</div>
+	</ul>
+
+	
+</div>

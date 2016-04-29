@@ -1,0 +1,70 @@
+#startmap{
+	position: absolute;
+	top: 0px;
+	left: 270px;
+	right: 0;
+	bottom: 70px;
+	@media @mobileAndTablet{
+		// top: 56px;
+		left: 0;
+		bottom: 60px;
+	}
+
+	background-color: #fff;
+	#map-container{
+		.grab();
+	}
+	.search-bar{
+		position:  absolute;
+		background-color: #fff;
+		top: 10px;
+		left: 10px;
+		color: #333;
+		border-radius: 3px;
+		height: 42px;
+		z-index: 500;
+		
+		.icon{
+			float: left;
+			height: 42px;
+			padding-top: 10px;
+			padding: 10px 10px;
+		}
+		@media @mobileAndTablet{
+			top: 8px;
+			left: 57px;
+			width: calc(~'100% - 20px');
+			background-color: transparent;
+			color: #fff;
+			.icon{
+				display:  none;
+			}
+		}
+		
+		&:focus{
+			border-color: #E94F19;
+		}
+	}
+	#map_pesquisa{
+		margin-top: 10px;
+		border: 1px solid transparent;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		outline: none;
+		font-size: 16px;
+		font-weight: 300;
+		height: 32px;
+		margin: 5px 0;
+		padding: 0 11px 0 1px;
+		text-overflow: ellipsis;
+		width: 250px;
+		box-shadow: none;
+		
+		@media @mobileAndTablet{
+			font-size: 21px;
+			font-weight: 500;
+		}
+
+		
+	}
+}

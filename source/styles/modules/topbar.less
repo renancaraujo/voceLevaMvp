@@ -1,0 +1,39 @@
+header{
+	z-index: 400;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	@media @desktop{
+		// display: none;
+	}
+
+}
+
+#main-title {
+    font-size: 22px;
+    padding-left: 18px;
+}
+topbar{
+	&.semitransparent{
+		nav{
+			background-color: rgba(233, 79, 25, 0.4);
+			box-shadow: none;
+		}
+	}
+	&.hidetitle{
+		nav{
+			#main-title{
+				.opacity(0);
+			}
+		}
+
+	} 
+	&.transparent{
+		nav{
+			background-color: transparent;
+			box-shadow: none;
+		}
+	}
+}
+

@@ -1,0 +1,76 @@
+//arquivo de configurações
+
+
+
+//pastas
+var caminhos = {
+	input : "source",
+	output : "www"
+};
+caminhos.styles  = {
+	input: caminhos.input+ "/styles",
+	output: caminhos.output
+};
+caminhos.script = {
+	input: caminhos.input + "/js",
+	output: caminhos.output + "/js"
+};
+caminhos.images = {
+	input: caminhos.input + "/images",
+	output: caminhos.output + "/images"
+};
+caminhos.html = {
+	input: caminhos.input,
+	output: caminhos.output
+};
+caminhos.templates = {
+	input: caminhos.input + "/part",
+	output: caminhos.output + "/part"
+};
+
+
+//fileinclude
+var fileinclude = {
+	prefix: '@@',
+	basepath: '@file'
+}
+
+//imagemin
+var imagemin = {
+	optimizationLevel: 5
+}
+
+//browserify
+var browserify = {
+	entries: [caminhos.script.input + '/main.js'],
+	cache: {},
+	packageCache: {},
+	fullPaths: false,
+	debug: false,
+	sourceType: "module"
+}
+
+
+//less
+var less = {
+	plugins: [require('less-plugin-glob')]
+}
+
+//servidor
+var server = {
+	baseDir: caminhos.output,
+	directory: true
+}
+
+
+ //exportar
+module.exports  = {
+	porta: 2412,
+	caminhos: caminhos,
+	fileinclude: fileinclude,
+	imagemin: imagemin,
+	browserify: browserify,
+	server: server,
+	less: less
+}
+

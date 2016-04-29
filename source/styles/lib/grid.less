@@ -1,0 +1,32 @@
+/// grid
+
+@colunas: 12;
+@max-width:1175;
+@gutter: 20;
+@rgutter: (@gutter/2)/16em;
+@br-small: 40em;
+@br-medium: 57.62500em;
+@br-xlarge: 90em;
+
+
+
+
+
+@mobile:  ~"only screen and (max-width: @{br-small})";
+@mobileAndTablet:  ~"only screen and (max-width: @{br-medium})";
+@tablet: ~"only screen and (min-width: @{br-small}) and (max-width: @{br-medium})";
+@desktop: ~"only screen and (min-width: @{br-medium})";
+@desktopAndTablet: ~"only screen and (min-width: @{br-small})";
+@xdesktop: ~"only screen and (min-width: @{br-xlarge})";
+
+@landscape: ~"only screen and (orientation: landscape)";
+@landscapeMobile: ~"only screen and (orientation: landscape) and (max-width: @{br-small})";
+@landscapeMobileAndTablet: ~"only screen and (orientation: landscape) and (max-width: @{br-medium})";
+
+@portrait: ~"only screen and (orientation: portrait)";
+@portraitMobileAndTablet: ~"only screen and (orientation: portrait) and (max-width: @{br-medium})";
+
+
+
+
+
